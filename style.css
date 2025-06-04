@@ -50,15 +50,10 @@
         .hero-section h2 {
             font-size: 3rem;
             margin-bottom: 1rem;
-        }
-
-        .hero-section h2 {
-            background: #E9F6E9;
-            padding: 1.5rem;
-            border-radius: 10px;
-            width: 250px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+             background: #ffffff;
+            color:#1F4D26;
+            padding: 1rem 0;
+            text-align: center;
         }
 
         .hero-section p {
