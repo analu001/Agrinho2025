@@ -1,53 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A Inovação Tecnológica no Campo</title>
-    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
+
     <header>
-        <div class="logo">
-            <h1>A Inovação Tecnológica no Campo</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Tecnologia</a></li>
-                <li><a href="#">Sustentabilidade</a></li>
-                <li><a href="#">Contatos</a></li>
-            </ul>
-        </nav>
+        <h1>A Inovação Tecnológica no Campo</h1>
     </header>
 
-    <section class="hero">
-        <h2>Transformando o Campo com Tecnologia</h2>
-        <p>Explore as novas fronteiras da inovação e saiba como a tecnologia está revolucionando o setor agrícola.</p>
-        <a href="#" class="cta">Saiba Mais</a>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#inovacoes">Inovações</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="hero-section" id="home">
+        <h2>Transformando a Agricultura com Tecnologia</h2>
+        <p>Explore as mais recentes inovações tecnológicas aplicadas ao campo, melhorando a produção e a sustentabilidade.</p>
+        <button class="btn" onclick="showAlert()">Saiba Mais</button>
     </section>
 
-    <section class="content">
-        <div class="cards">
-            <div class="card">
-                <h3>Automação no Campo</h3>
-                <p>O uso de drones, sensores e sistemas automatizados está revolucionando a maneira como as colheitas são feitas.</p>
+    <section class="innovation-section" id="inovacoes">
+        <h3>Inovações Tecnológicas no Campo</h3>
+        <div class="innovation-cards">
+            <div class="innovation-card">
+                <img src="https://via.placeholder.com/250x150?text=Drones+Agrícolas" alt="Drones Agrícolas">
+                <h4>Drones Agrícolas</h4>
+                <p>Uso de drones para monitoramento e análise em tempo real das lavouras.</p>
             </div>
-            <div class="card">
-                <h3> Agricultura de Precisão</h3>
-                <p>A tecnologia permite monitorar cada parte da plantação, otimizando recursos e aumentando a produtividade.</p>
+            <div class="innovation-card">
+                <img src="https://via.placeholder.com/250x150?text=Sensores+de+Solo" alt="Sensores de Solo">
+                <h4>Sensores de Solo</h4>
+                <p>Sensores inteligentes para otimização do uso de água e fertilizantes.</p>
             </div>
-            <div class="card">
-                <h3>Inovações Sustentáveis</h3>
-                <p>As novas soluções tecnológicas têm foco na sustentabilidade e na preservação do meio ambiente.</p>
+            <div class="innovation-card">
+                <img src="https://via.placeholder.com/250x150?text=Automação+Agrícola" alt="Automação Agrícola">
+                <h4>Automação Agrícola</h4>
+                <p>Máquinas autônomas que fazem o plantio e colheita com precisão.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 A Inovação Tecnológica no Campo. Todos os direitos reservados.</p>
+        <p>&copy; 2025 A Inovação Técnológica no Campo.</p>
     </footer>
+
+    <script>
+        function showAlert() {
+            alert("Obrigado por explorar a Inovação no Campo! Vamos revolucionar a agricultura juntos!");
+        }
+    </script>
+
 </body>
 </html>
