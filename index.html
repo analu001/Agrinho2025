@@ -1,55 +1,205 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Inovação Tecnológica no Campo - Agrinho 2025</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Inovação Tecnológica no Campo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2C6B2F; /* Cor verde para remeter ao campo */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #1F4D26; /* Verde mais escuro */
+            padding: 0.8rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero-section {
+            background: url('https://via.placeholder.com/1600x600?text=Campo+Tecnologia') no-repeat center center/cover;
+            padding: 5rem 0;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-section h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            background-color: #008C3A; /* Verde destaque */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #006F29;
+        }
+
+        .innovation-section {
+            padding: 4rem 2rem;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .innovation-section h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .innovation-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .innovation-card {
+            background: #E9F6E9;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .innovation-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .innovation-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .innovation-card h4 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .innovation-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #2C6B2F;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+
+            .innovation-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <h1>A Inovação Tecnológica no Campo</h1>
-            <nav>
-                <ul>
-                    <li><a href="#done">Drones na Agricultura</a></li>
-                    <li><a href="#ia">Inteligência Artificial</a></li>
-                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>A Inovação Tecnológica no Campo</h1>
     </header>
 
-    <section id="drone">
-        <div class="container">
-            <h2>Drones na Agricultura</h2>
-            <p>O uso de drones para monitoramento de culturas tem se tornado essencial para a agricultura moderna. Eles permitem análise em tempo real da plantação, mapeamento de áreas, e até pulverização precisa de fertilizantes e pesticidas.</p>
-            <img src="drone.jpg" alt="Drone na agricultura">
-        </div>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#inovacoes">Inovações</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="hero-section" id="home">
+        <h2>Transformando a Agricultura com Tecnologia</h2>
+        <p>Explore as mais recentes inovações tecnológicas aplicadas ao campo, melhorando a produção e a sustentabilidade.</p>
+        <button class="btn" onclick="showAlert()">Saiba Mais</button>
     </section>
 
-    <section id="ia">
-        <div class="container">
-            <h2>Inteligência Artificial no Campo</h2>
-            <p>A inteligência artificial está transformando a maneira como os produtores rurais tomam decisões. Sistemas baseados em IA ajudam a prever colheitas, analisar o clima e otimizar o uso de recursos.</p>
-            <img src="./imagens/images(1).jpg" alt="Inteligência Artificial na Agricultura">
-        </div>
-    </section>
-
-    <section id="sustentabilidade">
-        <div class="container">
-            <h2>Sustentabilidade na Agricultura</h2>
-            <p>Com a aplicação de tecnologias, a agricultura também se torna mais sustentável. O uso de tecnologias para otimizar o uso de água e minimizar desperdícios traz benefícios tanto para o campo quanto para a cidade.</p>
-            <img src="sustentabilidade.jpg" alt="Agricultura Sustentável">
+    <section class="innovation-section" id="inovacoes">
+        <h3>Inovações Tecnológicas no Campo</h3>
+        <div class="innovation-cards">
+            <div class="innovation-card">
+                <img src="https://via.placeholder.com/250x150?text=Drones+Agrícolas" alt="Drones Agrícolas">
+                <h4>Drones Agrícolas</h4>
+                <p>Uso de drones para monitoramento e análise em tempo real das lavouras.</p>
+            </div>
+            <div class="innovation-card">
+                <img src="https://via.placeholder.com/250x150?text=Sensores+de+Solo" alt="Sensores de Solo">
+                <h4>Sensores de Solo</h4>
+                <p>Sensores inteligentes para otimização do uso de água e fertilizantes.</p>
+            </div>
+            <div class="innovation-card">
+                <img src="https://via.placeholder.com/250x150?text=Automação+Agrícola" alt="Automação Agrícola">
+                <h4>Automação Agrícola</h4>
+                <p>Máquinas autônomas que fazem o plantio e colheita com precisão.</p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Agrinho - A Inovação Técnológica No Campo</p>
-        <a href="https://github.dev/analu001/Agrinho2025"><i class="fa-brands fa-github"></i></a>
+        <p>&copy; 2025 Inovação no Campo. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        function showAlert() {
+            alert("Obrigado por explorar a Inovação no Campo! Vamos revolucionar a agricultura juntos!");
+        }
+    </script>
+
 </body>
 </html>
