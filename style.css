@@ -53,7 +53,7 @@
         .hero-section h2 {
             font-size: 3rem;
             margin-bottom: 1rem;
-             background: #ffffff;
+             background: #f0f0f0;
             color:#1F4D26;
             padding: 1rem 0;
             text-align: center;
@@ -62,6 +62,7 @@
         .hero-section p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
+            color: #1F4D26;
         }j
 
         .btn {
