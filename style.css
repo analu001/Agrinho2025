@@ -110,6 +110,16 @@ header nav ul li a {
     color: #666;
 }
 
+.sobrenos{
+    display: flex;
+    background-color: aqua;
+    padding: 20px;
+    margin: 20px 0 0;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Estilo do rodapé */
 footer {
     background-color: #333;
