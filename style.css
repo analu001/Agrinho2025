@@ -19,7 +19,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .logo h1 {
@@ -43,14 +42,10 @@ header nav ul li a {
     transition: color 0.3s;
 }
 
-header nav ul li a:hover {
-    color: #ff9800;
-}
-
 /* Estilo do Hero Section */
 .hero {
-    background-image: url('https://example.com/hero-image.jpg'); /* Imagem relacionada ao campo e tecnologia */
-    background-size: cover;
+    background-image: url(https://www.green4t.com/wp-content/uploads/2023/03/tecnologia-sustetentabilidade-no-campo.jpg); /* Imagem relacionada ao campo e tecnologia */
+    background-size: auto;
     background-position: center;
     text-align: center;
     padding: 80px 20px;
