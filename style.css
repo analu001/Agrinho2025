@@ -111,10 +111,8 @@ header nav ul li a {
 }
 
 .sobrenos{
-    display: flex;
+    display: center;
     background-color: #4CAF50;
-    justify-content: center;
-    flex-wrap: wrap;
     padding: 20px;
     font-size: 14px;
     margin-top: 30px;
